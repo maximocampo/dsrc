@@ -1,18 +1,21 @@
-import React<%if (type !== "Functional component") {%>, { Component }<%}%> from "react";
-import PropTypes from "prop-types";
+import React<%if (type !== "Functional component") {%>, { Component }<%}%> from 'react';
+import PropTypes from 'prop-types';
 <%if (jss) {%>import withStyles from 'react-jss';
 import styles from './styles';<%}%>
 <%if (type === "Functional component") {%>
-function <%= name%>(<%if (jss) {%>{ classes, ...props} <%} else {%>props<%}%>) {
+function <%= name%>(<%if (jss) {%>{ classes, <%if (props.length > 0) {%><%=props%>, <%}%>...props} <%} else {%>props<%}%>) {
   return (
     <div>
 
-    </div>;
+    </div>
   );
 };
 <%} else {%>
 class <%= name%> extends Component {
   render() {
+    <%if (props) {%>
+    const { <%=props%>, ...props } = this.props<%}%>
+
     return (
       <div>
 
