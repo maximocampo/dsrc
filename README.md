@@ -1,4 +1,4 @@
-# generator-dsrc [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-dsrc
 > Generates a Design System ready React component boilerplate
 
 ## Installation
