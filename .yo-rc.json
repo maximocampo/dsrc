@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Maximo Campo",
+      "authorEmail": "themaxomoto@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
